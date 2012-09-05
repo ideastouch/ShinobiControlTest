@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="hl9-DF-b8z">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--Pie Chart View Controller-->
+        <scene sceneID="q0g-ww-nKo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjn-hQ-YzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hl9-DF-b8z" customClass="PieChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aY2-1l-t4y">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="LG2-aS-YZU">
+                                <rect key="frame" x="90" y="50" width="670" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pieBackground.png" id="dKD-1R-mPw">
+                                        <rect key="frame" x="2" y="2" width="666" height="296"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <view hidden="YES" contentMode="scaleToFill" id="ATw-if-frG">
+                                        <rect key="frame" x="330" y="50" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="infoBackground.png" id="VfQ-zx-S24">
+                                                <rect key="frame" x="2" y="2" width="318" height="196"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="u9d-fM-5rB">
+                                                <rect key="frame" x="20" y="20" width="82" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="25"/>
+                                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&lt;name>" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXy-n3-vNj">
+                                                <rect key="frame" x="119" y="20" width="181" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&lt;value>" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wFL-BC-Ufw">
+                                                <rect key="frame" x="119" y="97" width="181" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Value:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="s9V-lN-hva">
+                                                <rect key="frame" x="20" y="97" width="82" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="25"/>
+                                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="0sK-p4-VHm" customClass="ShinobiChart">
+                                        <rect key="frame" x="20" y="20" width="260" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="MRj-Do-A3f" appends="YES" id="hVh-PE-ere"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="TqG-pb-47L">
+                                <rect key="frame" x="90" y="403" width="670" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pieBackground.png" id="RBs-FE-InE">
+                                        <rect key="frame" x="2" y="2" width="666" height="296"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="kvQ-w2-1P0" customClass="ShinobiChart">
+                                        <rect key="frame" x="20" y="20" width="260" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="O9M-g8-Wjx">
+                                        <rect key="frame" x="330" y="50" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="infoBackground.png" id="8zd-YY-xXx">
+                                                <rect key="frame" x="2" y="2" width="318" height="196"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="donutChartView" destination="TqG-pb-47L" id="8c1-B3-g0J"/>
+                        <outlet property="donutShinobiChart" destination="kvQ-w2-1P0" id="QnE-R4-rmY"/>
+                        <outlet property="doubleTapRecognizer" destination="MRj-Do-A3f" id="zmY-RT-Dl5"/>
+                        <outlet property="pieChartInfoNameLabel" destination="fXy-n3-vNj" id="Wgi-0g-diq"/>
+                        <outlet property="pieChartInfoValueLabel" destination="wFL-BC-Ufw" id="G90-e0-bwp"/>
+                        <outlet property="pieChartInfoView" destination="ATw-if-frG" id="y0Q-1i-4fF"/>
+                        <outlet property="pieChartView" destination="LG2-aS-YZU" id="Hua-aB-P24"/>
+                        <outlet property="pieShinobiChart" destination="0sK-p4-VHm" id="YWj-gx-enO"/>
+                        <outletCollection property="pieChartLabelsCollection" destination="u9d-fM-5rB" id="Z7i-Lz-78G"/>
+                        <outletCollection property="pieChartLabelsCollection" destination="fXy-n3-vNj" id="5Et-VG-Tqj"/>
+                        <outletCollection property="pieChartLabelsCollection" destination="wFL-BC-Ufw" id="ZaL-hp-4cG"/>
+                        <outletCollection property="pieChartLabelsCollection" destination="s9V-lN-hva" id="F5u-5X-Y1r"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="MRj-Do-A3f">
+                    <connections>
+                        <action selector="doubleTapHandlerAction:" destination="hl9-DF-b8z" id="JM5-ai-KhU"/>
+                        <outlet property="delegate" destination="hl9-DF-b8z" id="SgW-ux-GQo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="159" y="-270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="infoBackground.png" width="314" height="422"/>
+        <image name="pieBackground.png" width="315" height="201"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
