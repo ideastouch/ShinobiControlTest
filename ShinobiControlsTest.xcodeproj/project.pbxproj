@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9B03AFA15F683B900D4DA7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03AF915F683B900D4DA7E /* UIKit.framework */; };
+		C9B03AFC15F683B900D4DA7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03AFB15F683B900D4DA7E /* Foundation.framework */; };
+		C9B03AFE15F683B900D4DA7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03AFD15F683B900D4DA7E /* CoreGraphics.framework */; };
+		C9B03B0415F683B900D4DA7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B0215F683B900D4DA7E /* InfoPlist.strings */; };
+		C9B03B0615F683B900D4DA7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B0515F683B900D4DA7E /* main.m */; };
+		C9B03B0A15F683B900D4DA7E /* iDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B0915F683B900D4DA7E /* iDTAppDelegate.m */; };
+		C9B03B1115F683DE00D4DA7E /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B1015F683DE00D4DA7E /* Storyboard-iPad.storyboard */; };
+		C9B03B1C15F689D400D4DA7E /* iDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B1B15F689D400D4DA7E /* iDTViewController.m */; };
+		C9B03B1E15F68A5900D4DA7E /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B1515F684F400D4DA7E /* PieChartViewController.m */; };
+		C9B03B2015F68A5900D4DA7E /* PieChartDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B1715F6850400D4DA7E /* PieChartDataSource.m */; };
+		C9B03B2215F68A9F00D4DA7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03B2115F68A9F00D4DA7E /* QuartzCore.framework */; };
+		C9B03B2415F68ACC00D4DA7E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03B2315F68ACC00D4DA7E /* OpenGLES.framework */; };
+		C9B03B2515F68B0200D4DA7E /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B03B1915F6851200D4DA7E /* LineView.m */; };
+		C9B03B2715F68D2800D4DA7E /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03B2615F68D2800D4DA7E /* ShinobiCharts.framework */; };
+		C9B03B2915F68D6D00D4DA7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B03B2815F68D6D00D4DA7E /* Security.framework */; };
+		C9B03B2C15F6933E00D4DA7E /* pieBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B2B15F6933E00D4DA7E /* pieBackground@2x.png */; };
+		C9B03B2E15F6936300D4DA7E /* pieBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B2D15F6936300D4DA7E /* pieBackground.png */; };
+		C9B03B3215F696CA00D4DA7E /* infoBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B3115F696CA00D4DA7E /* infoBackground@2x.png */; };
+		C9B03B3415F6972300D4DA7E /* infoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B03B3315F6972300D4DA7E /* infoBackground.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9B03AF515F683B900D4DA7E /* ShinobiControlsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinobiControlsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B03AF915F683B900D4DA7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9B03AFB15F683B900D4DA7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9B03AFD15F683B900D4DA7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9B03B0115F683B900D4DA7E /* ShinobiControlsTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShinobiControlsTest-Info.plist"; sourceTree = "<group>"; };
+		C9B03B0315F683B900D4DA7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9B03B0515F683B900D4DA7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9B03B0715F683B900D4DA7E /* ShinobiControlsTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShinobiControlsTest-Prefix.pch"; sourceTree = "<group>"; };
+		C9B03B0815F683B900D4DA7E /* iDTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iDTAppDelegate.h; sourceTree = "<group>"; };
+		C9B03B0915F683B900D4DA7E /* iDTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDTAppDelegate.m; sourceTree = "<group>"; };
+		C9B03B1015F683DE00D4DA7E /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
+		C9B03B1415F684F400D4DA7E /* PieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
+		C9B03B1515F684F400D4DA7E /* PieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
+		C9B03B1615F6850400D4DA7E /* PieChartDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartDataSource.h; sourceTree = "<group>"; };
+		C9B03B1715F6850400D4DA7E /* PieChartDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PieChartDataSource.m; sourceTree = "<group>"; };
+		C9B03B1815F6851200D4DA7E /* LineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		C9B03B1915F6851200D4DA7E /* LineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		C9B03B1A15F689D400D4DA7E /* iDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDTViewController.h; sourceTree = "<group>"; };
+		C9B03B1B15F689D400D4DA7E /* iDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iDTViewController.m; sourceTree = "<group>"; };
+		C9B03B2115F68A9F00D4DA7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C9B03B2315F68ACC00D4DA7E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C9B03B2615F68D2800D4DA7E /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		C9B03B2815F68D6D00D4DA7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C9B03B2B15F6933E00D4DA7E /* pieBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pieBackground@2x.png"; sourceTree = "<group>"; };
+		C9B03B2D15F6936300D4DA7E /* pieBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pieBackground.png; sourceTree = "<group>"; };
+		C9B03B3115F696CA00D4DA7E /* infoBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infoBackground@2x.png"; sourceTree = "<group>"; };
+		C9B03B3315F6972300D4DA7E /* infoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B03AF215F683B800D4DA7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B03B2915F68D6D00D4DA7E /* Security.framework in Frameworks */,
+				C9B03AFE15F683B900D4DA7E /* CoreGraphics.framework in Frameworks */,
+				C9B03B2415F68ACC00D4DA7E /* OpenGLES.framework in Frameworks */,
+				C9B03B2215F68A9F00D4DA7E /* QuartzCore.framework in Frameworks */,
+				C9B03AFA15F683B900D4DA7E /* UIKit.framework in Frameworks */,
+				C9B03AFC15F683B900D4DA7E /* Foundation.framework in Frameworks */,
+				C9B03B2715F68D2800D4DA7E /* ShinobiCharts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9B03AEA15F683B800D4DA7E = {
+			isa = PBXGroup;
+			children = (
+				C9B03AFF15F683B900D4DA7E /* ShinobiControlsTest */,
+				C9B03AF815F683B900D4DA7E /* Frameworks */,
+				C9B03AF615F683B900D4DA7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9B03AF615F683B900D4DA7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B03AF515F683B900D4DA7E /* ShinobiControlsTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B03AF815F683B900D4DA7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B03B2815F68D6D00D4DA7E /* Security.framework */,
+				C9B03B2615F68D2800D4DA7E /* ShinobiCharts.framework */,
+				C9B03B2315F68ACC00D4DA7E /* OpenGLES.framework */,
+				C9B03B2115F68A9F00D4DA7E /* QuartzCore.framework */,
+				C9B03AF915F683B900D4DA7E /* UIKit.framework */,
+				C9B03AFB15F683B900D4DA7E /* Foundation.framework */,
+				C9B03AFD15F683B900D4DA7E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B03AFF15F683B900D4DA7E /* ShinobiControlsTest */ = {
+			isa = PBXGroup;
+			children = (
+				C9B03B0815F683B900D4DA7E /* iDTAppDelegate.h */,
+				C9B03B0915F683B900D4DA7E /* iDTAppDelegate.m */,
+				C9B03B1415F684F400D4DA7E /* PieChartViewController.h */,
+				C9B03B1515F684F400D4DA7E /* PieChartViewController.m */,
+				C9B03B1615F6850400D4DA7E /* PieChartDataSource.h */,
+				C9B03B1715F6850400D4DA7E /* PieChartDataSource.m */,
+				C9B03B1815F6851200D4DA7E /* LineView.h */,
+				C9B03B1915F6851200D4DA7E /* LineView.m */,
+				C9B03B0015F683B900D4DA7E /* Supporting Files */,
+				C9B03B1A15F689D400D4DA7E /* iDTViewController.h */,
+				C9B03B1B15F689D400D4DA7E /* iDTViewController.m */,
+			);
+			path = ShinobiControlsTest;
+			sourceTree = "<group>";
+		};
+		C9B03B0015F683B900D4DA7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B03B2A15F6924200D4DA7E /* images */,
+				C9B03B0115F683B900D4DA7E /* ShinobiControlsTest-Info.plist */,
+				C9B03B0215F683B900D4DA7E /* InfoPlist.strings */,
+				C9B03B0515F683B900D4DA7E /* main.m */,
+				C9B03B0715F683B900D4DA7E /* ShinobiControlsTest-Prefix.pch */,
+				C9B03B1015F683DE00D4DA7E /* Storyboard-iPad.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B03B2A15F6924200D4DA7E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C9B03B3315F6972300D4DA7E /* infoBackground.png */,
+				C9B03B3115F696CA00D4DA7E /* infoBackground@2x.png */,
+				C9B03B2D15F6936300D4DA7E /* pieBackground.png */,
+				C9B03B2B15F6933E00D4DA7E /* pieBackground@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9B03AF415F683B800D4DA7E /* ShinobiControlsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B03B0D15F683B900D4DA7E /* Build configuration list for PBXNativeTarget "ShinobiControlsTest" */;
+			buildPhases = (
+				C9B03AF115F683B800D4DA7E /* Sources */,
+				C9B03AF215F683B800D4DA7E /* Frameworks */,
+				C9B03AF315F683B800D4DA7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinobiControlsTest;
+			productName = ShinobiControlsTest;
+			productReference = C9B03AF515F683B900D4DA7E /* ShinobiControlsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9B03AEC15F683B800D4DA7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = iDT;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = iDeasTouch;
+			};
+			buildConfigurationList = C9B03AEF15F683B800D4DA7E /* Build configuration list for PBXProject "ShinobiControlsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9B03AEA15F683B800D4DA7E;
+			productRefGroup = C9B03AF615F683B900D4DA7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B03AF415F683B800D4DA7E /* ShinobiControlsTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9B03AF315F683B800D4DA7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B03B0415F683B900D4DA7E /* InfoPlist.strings in Resources */,
+				C9B03B1115F683DE00D4DA7E /* Storyboard-iPad.storyboard in Resources */,
+				C9B03B2C15F6933E00D4DA7E /* pieBackground@2x.png in Resources */,
+				C9B03B2E15F6936300D4DA7E /* pieBackground.png in Resources */,
+				C9B03B3215F696CA00D4DA7E /* infoBackground@2x.png in Resources */,
+				C9B03B3415F6972300D4DA7E /* infoBackground.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9B03AF115F683B800D4DA7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B03B2515F68B0200D4DA7E /* LineView.m in Sources */,
+				C9B03B1E15F68A5900D4DA7E /* PieChartViewController.m in Sources */,
+				C9B03B2015F68A5900D4DA7E /* PieChartDataSource.m in Sources */,
+				C9B03B0615F683B900D4DA7E /* main.m in Sources */,
+				C9B03B0A15F683B900D4DA7E /* iDTAppDelegate.m in Sources */,
+				C9B03B1C15F689D400D4DA7E /* iDTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9B03B0215F683B900D4DA7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B03B0315F683B900D4DA7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9B03B0B15F683B900D4DA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C9B03B0C15F683B900D4DA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9B03B0E15F683B900D4DA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiControlsTest/ShinobiControlsTest-Prefix.pch";
+				INFOPLIST_FILE = "ShinobiControlsTest/ShinobiControlsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9B03B0F15F683B900D4DA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiControlsTest/ShinobiControlsTest-Prefix.pch";
+				INFOPLIST_FILE = "ShinobiControlsTest/ShinobiControlsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9B03AEF15F683B800D4DA7E /* Build configuration list for PBXProject "ShinobiControlsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B03B0B15F683B900D4DA7E /* Debug */,
+				C9B03B0C15F683B900D4DA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B03B0D15F683B900D4DA7E /* Build configuration list for PBXNativeTarget "ShinobiControlsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B03B0E15F683B900D4DA7E /* Debug */,
+				C9B03B0F15F683B900D4DA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9B03AEC15F683B800D4DA7E /* Project object */;
+}
