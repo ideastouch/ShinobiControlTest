@@ -40,7 +40,7 @@
         pieSeries.selectedStyle.labelFontColor = [UIColor blackColor];
         pieSeries.selectedPosition = [NSNumber numberWithDouble:-M_PI_2];
         pieSeries.outerRadius = chart.frame.size.height * 0.5f * 0.8f;
-        pieSeries.innerRadius = pieSeries.outerRadius * 0.2f;
+        //pieSeries.innerRadius = pieSeries.outerRadius * 0.2f;
         
         radialSeries = pieSeries;
         
