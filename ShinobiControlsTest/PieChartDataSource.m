@@ -12,7 +12,10 @@
 // Returns the number of points for a specific series in the specified chart
 - (int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
     if (chart.tag == 1) {
-        return 6;
+        if (seriesIndex == 0)
+            return 6;
+        else
+            return 1;
     }
     else {
         return 2;
@@ -27,23 +30,39 @@
     
     // Return an appropriate subclass of SChartRadialSeries.
     if (chart.tag == 1) {
-    //if ([[chart title] isEqualToString:@"Pie Chart"]) {
-        
-        // Pie Chart
-        SChartPieSeries *pieSeries = [[SChartPieSeries alloc] init];
-        
-        // Configure the series
-        pieSeries.title = [NSString stringWithFormat:@"Pie Series"];
-        pieSeries.style.showLabels = YES;
-        pieSeries.style.chartEffect = SChartRadialChartEffectRounded;
-        pieSeries.selectedStyle.chartEffect = SChartRadialChartEffectRounded;
-        pieSeries.selectedStyle.labelFontColor = [UIColor blackColor];
-        pieSeries.selectedPosition = [NSNumber numberWithDouble:-M_PI_2];
-        pieSeries.outerRadius = chart.frame.size.height * 0.5f * 0.8f;
-        pieSeries.innerRadius = pieSeries.outerRadius * 0.2f;
-        
-        radialSeries = pieSeries;
-        
+        if (index == 0) {
+            //if ([[chart title] isEqualToString:@"Pie Chart"]) {
+    
+            // Pie Chart
+            SChartDonutSeries *pieSeries = [[SChartDonutSeries alloc] init];
+            
+            // Configure the series
+            pieSeries.title = [NSString stringWithFormat:@"Pie Series"];
+            pieSeries.style.showLabels = YES;
+            pieSeries.style.chartEffect = SChartRadialChartEffectRounded;
+            pieSeries.selectedStyle.chartEffect = SChartRadialChartEffectRounded;
+            pieSeries.selectedStyle.labelFontColor = [UIColor blackColor];
+            pieSeries.selectedPosition = [NSNumber numberWithDouble:-M_PI_2];
+            pieSeries.outerRadius = chart.frame.size.height * 0.5f * 0.8f;
+            pieSeries.innerRadius = pieSeries.outerRadius * 0.35f;
+            
+            radialSeries = pieSeries;
+        }
+        else {
+            SChartPieSeries *pieSeries = [[SChartPieSeries alloc] init];
+            
+            // Configure the series
+            pieSeries.title = [NSString stringWithFormat:@"Pie Button"];
+            pieSeries.style.showLabels = NO;
+            pieSeries.style.chartEffect = SChartRadialChartEffectRounded;
+            pieSeries.selectedStyle.chartEffect = SChartRadialChartEffectRounded;
+            pieSeries.selectedStyle.labelFontColor = [UIColor blackColor];
+            pieSeries.selectedPosition = [NSNumber numberWithDouble:-M_PI_2];
+            pieSeries.outerRadius = chart.frame.size.height * 0.5f * 0.8f * 0.35f;
+            //pieSeries.innerRadius = pieSeries.outerRadius * 0.2f;
+            
+            radialSeries = pieSeries;
+        }
     } else {
         
         // Donut Chart
@@ -66,7 +85,10 @@
 
 // Returns the number of series in the specified chart
 - (int)numberOfSeriesInSChart:(ShinobiChart *)chart {
-    return 1;
+    if (chart.tag == 1)
+        return 2;
+    else
+        return 1;
 }
 
 // Returns the data point at the specified index for the given series/chart.
@@ -80,7 +102,10 @@
     
     // Give the data point a value
     if (chart.tag == 1) {
-        datapoint.value = [NSNumber numberWithInt: 5+dataIndex];
+        if (seriesIndex == 0)
+            datapoint.value = [NSNumber numberWithInt: 5+dataIndex];
+        else
+            datapoint.value = [NSNumber numberWithInt: 1];
     }
     else {
         if (dataIndex == 0) {

@@ -141,7 +141,7 @@
 #define EXTRUSION 30.f//120.
 -(void)sChart:(ShinobiChart *)chart alterLabel:(UILabel *)label forDatapoint:(SChartDataPoint *)datapoint atSliceIndex:(int)index inRadialSeries:(SChartRadialSeries *)series {
     
-    if (chart == _donutShinobiChart) {
+    if (chart == _donutShinobiChart || series != 0) {
         return;
     }
     
